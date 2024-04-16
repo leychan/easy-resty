@@ -1,6 +1,6 @@
 module github.com/leychan/easy-resty
 
-go 1.22
+go 1.21
 
 require (
 	github.com/go-resty/resty/v2 v2.12.0

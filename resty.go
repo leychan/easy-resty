@@ -31,12 +31,6 @@ func WithFormData(params map[string]string) ClientOption {
     }
 }
 
-// WithRequestBody 是一个函数，用来设置请求的请求体
-func WithRequestBody(body any) ClientOption {
-    return func(c *resty.Client) {
-        c.R().SetBody(body)
-    }
-}
 
 // WithHeader 是一个函数，用来设置请求的头部
 func WithHeader(key, value string) ClientOption {
